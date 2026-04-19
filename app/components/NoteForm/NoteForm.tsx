@@ -3,8 +3,8 @@ import css from './NoteForm.module.css'
 import { useId } from 'react'
 import * as Yup from "yup"
 import { useMutation, useQueryClient } from '@tanstack/react-query'
-import { createNote } from '@/app/lib/api'
-import { NoteTag } from '@/app/types/notes'
+import { createNote } from '@/lib/api'
+import { NoteTag } from '@/types/notes'
 
 const OrderFormSchema = Yup.object().shape({
     title: Yup.string().min(3).max(50).required(),

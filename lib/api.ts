@@ -1,5 +1,5 @@
 import axios from "axios";
-import { NewNote, Note } from "@/app/types/notes";
+import { NewNote, Note } from "@/types/notes";
 
 interface FetchNotesResponse {
   notes: Note[];

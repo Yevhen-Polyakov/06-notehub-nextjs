@@ -55,7 +55,7 @@ const NoteClient = () => {
 
         <div>
             {isError && <ErrorMessage error={error}/>}
-            <NoteList notes={notes}/>
+            {notes.length > 0 && <NoteList notes={notes}/>}
         </div>
         </>
         

@@ -10,7 +10,8 @@ interface NoteDetailClientProps {
 const NoteDetailClient = ({ noteId }: NoteDetailClientProps) => {
     const {data: note, isLoading, error} = useQuery({
         queryKey: ["note", noteId],
-        queryFn: () => fetchNoteById(noteId)
+        queryFn: () => fetchNoteById(noteId),
+        refetchOnMount: false,
     })
 
     if (isLoading) {

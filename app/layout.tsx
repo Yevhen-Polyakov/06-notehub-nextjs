@@ -35,9 +35,9 @@ export default function RootLayout({
               {children}
             </main>
         
-            
+             <Footer/>
         </TanStackProvider>
-        <Footer/>
+       
         </body>
     </html>
   );
